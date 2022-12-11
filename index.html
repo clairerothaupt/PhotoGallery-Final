@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <title>PhotoGallery</title>
-     <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoGallery</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-    
+
+<body>
     <header id="top">
         <h1>TK Photography</h1>
             <nav>
@@ -14,10 +18,11 @@
               <a href="#top">Top</a>
             </nav>
     </header>
-
-        <img src = 'TK.png'>
-
-    <body>
+  
+<section class="first">
+  <img src = 'TK.png' alt="sunset and man with camera">
+</section>
+ 
         <section class="about">
             <h2>About</h2>
 
@@ -29,107 +34,97 @@
             <h2>Gallery</h2>
             <p>Here are some highlights of my work. 
                 The locations and year are in the caption.</p>
-               
-                <figure>
-                <img src = 'Chile.png'
-                width="281px"
-                height= "auto">
-                <figcaption>Chile, 2001</figcaption>
-                </figure>
+                <div class="container"></section>
+                  <figure>
+                    <div class="chile">
+                      <img src = 'Chile.png' alt="beach with cliffs" align="left">
+                      <figcaption class="left">Chile, 2001</figcaption>
+                    </div>
+                  </figure>
+                  
+                  <figure>
+                  <img src = 'Guatemala.png' alt="purple sunset with lavendar flowers" align="center">
+                  <figcaption class="white left">Guatemala, 1997</figcaption>                    
+                  </figure>
+
+                  <figure>
+                  <img src = 'Hawaii.png' alt="ocean and mountains" align="right">
+                  <figcaption class="white right">Hawaii, 2010</figcaption>                 
+                  </figure>
+                </section>
+                <section class="third">
+                  <figure>
+                    <img src = 'Iran.png' alt="desert scape with small plants and mountains in the background">
+                   <figcaption class="left">Iran, 1999</figcaption>                 
+                  </figure>
+   
+                  <figure>
+                    <img src = 'Ireland.png' alt="green foliage">
+                   <figcaption class="white right">Ireland, 2012</figcaption>                
+                  </figure>
+   
+                  <figure>
+                     <img src = 'Italy.png' alt="lake with mountain">
+                   <figcaption class="white left">Italy, 2015</figcaption>                 
+                  </figure>
+                </section>
                 
+
                 <figure>
-                <img src = 'Guatemala.png'>
-                <figcaption>Guatemala, 1997</figcaption>                    
+                <img src = 'Moab-Desert.png' alt="cave with sunset">
+                <figcaption class="white right">Moab Desert, 2020</figcaption>             
                 </figure>
 
                 <figure>
-                <img src = 'Hawaii.png'>
-                <figcaption>Hawaii, 2010</figcaption>                 
+                <img src = 'Rocky-Mountains.png' alt="stacked rocks with water rushing through">
+                <figcaption class="left">Rocky Mountains, 2009</figcaption>                 
                 </figure>
 
                 <figure>
-                 <img src = 'Iran.png'>
-                <figcaption>Iran, 1999</figcaption>                 
+                 <img src = 'Switzerland.png' alt="snowy mountains">
+                <figcaption class="left">Switzerland, 2014</figcaption>           
                 </figure>
 
                 <figure>
-                 <img src = 'Ireland.png'>
-                <figcaption>Ireland, 2012</figcaption>                
+                 <img src = 'UK.png' alt="green valley landscape">
+                <figcaption class="white right">UK, 2005</figcaption>                
                 </figure>
 
                 <figure>
-                <img src = 'Italy.png'>
-                <figcaption>Italy, 2015</figcaption>                 
+                <img src = 'USA.png' alt="flower field with a sunset covered by dark clouds">
+                <figcaption class="white left">USA, 2021</figcaption>                  
                 </figure>
 
                 <figure>
-                <img src = 'Moab-Desert.png'>
-                <figcaption>Moab Desert, 2020</figcaption>             
-                </figure>
-
-                <figure>
-                <img src = 'Rocky-Mountains.png'>
-                <figcaption>Rocky Mountains, 2009</figcaption>                 
-                </figure>
-
-                <figure>
-                 <img src = 'Switzerland.png'>
-                <figcaption>Switzerland, 2014</figcaption>           
-                </figure>
-
-                <figure>
-                 <img src = 'UK.png'>
-                <figcaption>UK, 2005</figcaption>                
-                </figure>
-
-                <figure>
-                <img src = 'USA.png'>
-                <figcaption>USA, 2021</figcaption>                  
-                </figure>
-
-                <figure>
-                <img src = 'Wyoming.png'>
-                <figcaption>Wyoming, 2021</figcaption>               
+                <img src = 'Wyoming.png' alt="reflected mountain scape over lake">
+                <figcaption class="white left">Wyoming, 2021</figcaption>               
                 </figure>
 
         </section>
-
+      
         <section>
-            <div class="container">
-                <form action="action_page.php">
-                <h2>Contact</h2>
-                <p>Please fill out this form and I’ll connect with you soon.</p>
-                <label for="Name" class="fcf-label">Your name</label>
-                <div class="fcf-input-group">
-                    <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-                </div>
-            <div class="fcf-form-group">
-                <label for="Email" class="fcf-label">Your email address</label>
-                <div class="fcf-input-group">
-                    <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-                </div>
-                <div class="fcf-form-group">
-                    <label for="Message" class="fcf-label">Your message</label>
-                    <div class="fcf-input-group">
-                        <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-                    </div>
-                </div>
-                <div class="fcf-form-group">
-                    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
-                </div>
-                </form>
+          <h3>Contact us</h3>
+          <form id="form-id" class="form-class" method="post" action="contact-form-process">
+                  <label for="Name" class="label">Your name</label>
+                  <div class="input-group">
+                      <input type="text" id="Name" name="Name" class="form-control" required></div>
+              <div class="form-group">
+                  <label for="Email" class="label">Your email address</label>
+                  <div class="input-group">
+                      <input type="email" id="Email" name="Email" class="form-control" required></div>
+            </div>
+              <div class="form-group">
+                  <label for="Message" class="label">Your message</label>
+                  <div class="input-group">
+                      <textarea id="Message" name="Message" class="form-control" rows="6" maxlength="3000" required></textarea></div>
               </div>
-
-            <p>Your contact information
-            Name (Your full name)
-            Email (Enter your email address)
-            Message (What can I help you with?)
-            Submit
-            </p>
+              <div class="form-group">
+                  <button type="submit" id="button" class="primary-block">Send</button></div>
+                </form>
         </section>
         <footer>
             <small>Copyright 2021 TK Photography</small>
         </footer>   
 
     </body>
-<html>
+</html>
